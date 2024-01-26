@@ -3,5 +3,6 @@ function Hello() {
 }
 
 function LogNumber(num) {
-    console.log(num)
+    console.log(num+2)
 }
+
