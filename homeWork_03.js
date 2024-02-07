@@ -68,7 +68,7 @@ class CustomStack {
     }
 
     peek() {
-        return this.stackArray[this.stackArray.length-1]
+        return this.stackArray[this.stackArray.length - 1]
     }
 }
 
@@ -76,6 +76,31 @@ class CustomStack {
 
 // - Реализуйте очередь с использованием массива.
 // - Имитируйте работу очереди на примере ожидания на кассе.
+class CustomQueue {
+    constructor() {
+        this.queue = []
+    }
+
+    clear() {
+        this.queue = []
+    }
+
+    contains() {
+        return this.queue.includes(value)
+    }
+
+    dequeue() {
+        return this.stackArray.shift()
+    }
+
+    enqueue() {
+        this.stackArray.push(...value)
+    }
+
+    peek() {
+        return this.stackArray[0]
+    }
+}
 
 
 // Бонус задание: Реализовать полифил(собственную функцию реализующую встроенную в js) метода bind()
